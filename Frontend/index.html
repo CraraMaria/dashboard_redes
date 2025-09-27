@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise de Tráfego - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Monitor de Tráfego de Rede (5s)</h1>
+    </header>
+    
+    <main>
+        <div id="chart-container">
+            <h2>Tráfego Agregado por Cliente (Bytes)</h2>
+            <div id="main-chart"></div>
+        </div>
+        
+        <div id="detail-container" style="display: none;">
+            <h2>Detalhe de Protocolos para <span id="client-ip-title"></span></h2>
+            <button onclick="hideDetails()">Voltar</button>
+            <div id="protocol-chart"></div>
+        </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
